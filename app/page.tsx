@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button"
+import { Banner } from "@/registry/kromm-ui/ui/banner"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+    <div className="flex flex-col min-h-svh">
+      <Banner showClose>
+
+      </Banner>
+      <div className="flex max-w-md min-w-0 flex-col p-6 gap-4 text-sm leading-loose">
         <div>
           <h1 className="font-medium">Project ready!</h1>
           <p>You may now add components and start building.</p>

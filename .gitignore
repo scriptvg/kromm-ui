@@ -18,6 +18,9 @@
 # production
 /build
 
+# kromm-ui: registro generado por `shadcn build` (se regenera en cada deploy)
+/public/r
+
 # misc
 .DS_Store
 *.pem

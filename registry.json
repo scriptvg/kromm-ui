@@ -1,0 +1,77 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "kromm-ui",
+  "homepage": "https://kromm-ui.vercel.app",
+  "items": [
+    {
+      "name": "banner",
+      "type": "registry:block",
+      "title": "Banner superior (aviso)",
+      "description": "Aviso rotativo en la parte superior de la tienda.",
+      "registryDependencies": ["@shadcn/button", "@kromm-ui/use-controllable-state"],
+      "dependencies": ["lucide-react", "class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/kromm-ui/ui/banner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/banner.tsx"
+        }
+      ]
+    },
+    {
+      "name": "use-controllable-state",
+      "type": "registry:hook",
+      "title": "useControllableState",
+      "description": "Estado controlable (controlado/no-controlado) reutilizable para componentes compound. Estilo use-mobile.",
+      "files": [
+        {
+          "path": "registry/kromm-ui/hooks/use-controllable-state.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-controllable-state.ts"
+        }
+      ]
+    },
+    {
+      "name": "tema-base",
+      "type": "registry:theme",
+      "title": "Tema base (casa)",
+      "description": "Tema casa de referencia. Reskinea los bloques via tokens, sin tocar su codigo.",
+      "cssVars": {
+        "theme": {
+          "font-heading": "var(--font-sans)"
+        },
+        "light": {
+          "primary": "oklch(0.55 0.22 264)",
+          "primary-foreground": "oklch(0.985 0 0)",
+          "ring": "oklch(0.55 0.22 264)",
+          "radius": "0.5rem"
+        },
+        "dark": {
+          "primary": "oklch(0.7 0.18 264)",
+          "primary-foreground": "oklch(0.205 0 0)",
+          "ring": "oklch(0.7 0.18 264)"
+        }
+      }
+    },
+    {
+      "name": "tema-vans",
+      "type": "registry:theme",
+      "title": "Tema Vans (monocromo)",
+      "description": "Destilado de la demo Vans: monocromo de alto contraste y esquinas rectas (radius 0). La identidad Vans no esta en sus tokens (eran el neutral default) sino en el uso negro/blanco; este tema lo formaliza.",
+      "cssVars": {
+        "light": {
+          "primary": "oklch(0 0 0)",
+          "primary-foreground": "oklch(1 0 0)",
+          "ring": "oklch(0 0 0)",
+          "radius": "0rem"
+        },
+        "dark": {
+          "primary": "oklch(1 0 0)",
+          "primary-foreground": "oklch(0 0 0)",
+          "ring": "oklch(0.985 0 0)",
+          "radius": "0rem"
+        }
+      }
+    }
+  ]
+}

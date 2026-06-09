@@ -1,0 +1,10 @@
+/**
+ * tema-base — tema "casa" de referencia para el multistyle encofado.
+ *
+ * Es un item `registry:theme`: NO trae componentes, solo tokens. Al instalarlo
+ * (shadcn add tema-base) shadcn parchea estos `cssVars` en tu `globals.css`,
+ * reskineando todos los bloques (banner incluido) sin tocar su código.
+ *
+ * Esta hoja es solo documentación/preview legible; la fuente de verdad que
+ * publica el registro son los `cssVars` declarados en registry.json.
+ */

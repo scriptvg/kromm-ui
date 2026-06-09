@@ -1,0 +1,28 @@
+{
+  "$comment": "Catalogo de presets (skins de tienda) para el store-builder. Cada entrada es un preset shadcn aplicable con: shadcn apply <code> --only theme,font. 'source: casa' = propios; 'source: shadcn' = oficiales de ui.shadcn.com/create. El builder lista estos como opciones de tema para cada tenant.",
+  "default": "casa-base",
+  "presets": [
+    {
+      "id": "casa-base",
+      "label": "Casa — Base",
+      "source": "casa",
+      "code": "buFywKm",
+      "style": "lyra",
+      "baseColor": "neutral",
+      "font": "inter",
+      "radius": "default",
+      "url": "https://ui.shadcn.com/create?preset=buFywKm",
+      "note": "Preset actual del proyecto (preset resolve)."
+    },
+    {
+      "id": "shadcn-default",
+      "label": "shadcn — Default",
+      "source": "shadcn",
+      "code": null,
+      "style": "new-york",
+      "baseColor": "neutral",
+      "url": "https://ui.shadcn.com/create",
+      "note": "Placeholder: pega aqui el code oficial cuando elijas uno en ui.shadcn.com/create."
+    }
+  ]
+}
