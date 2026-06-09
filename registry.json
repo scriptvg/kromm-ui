@@ -10,6 +10,26 @@
       "description": "Aviso rotativo en la parte superior de la tienda.",
       "registryDependencies": ["@shadcn/button", "@kromm-ui/use-controllable-state"],
       "dependencies": ["lucide-react", "class-variance-authority"],
+      "cssVars": {
+        "theme": {
+          "color-success": "var(--success)",
+          "color-success-foreground": "var(--success-foreground)",
+          "color-warning": "var(--warning)",
+          "color-warning-foreground": "var(--warning-foreground)"
+        },
+        "light": {
+          "success": "oklch(0.55 0.14 160)",
+          "success-foreground": "oklch(0.985 0 0)",
+          "warning": "oklch(0.62 0.15 75)",
+          "warning-foreground": "oklch(0.985 0 0)"
+        },
+        "dark": {
+          "success": "oklch(0.72 0.15 160)",
+          "success-foreground": "oklch(0.205 0 0)",
+          "warning": "oklch(0.8 0.16 80)",
+          "warning-foreground": "oklch(0.205 0 0)"
+        }
+      },
       "files": [
         {
           "path": "registry/kromm-ui/ui/banner.tsx",

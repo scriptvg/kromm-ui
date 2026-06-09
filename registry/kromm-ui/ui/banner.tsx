@@ -13,6 +13,10 @@ const bannerVariants = cva(
   {
     variants: {
       variant: {
+        default: "border-border bg-background text-foreground",
+        destructive: "border-destructive/30 bg-destructive/10 text-destructive",
+        success: "border-success/30 bg-success/10 text-success",
+        warning: "border-warning/30 bg-warning/10 text-warning",
         announcement:
           "h-8 items-center justify-center gap-0 rounded-none border-0 bg-foreground px-4 py-0 text-center text-[11px] font-semibold leading-none text-background shadow-none",
       },
@@ -23,7 +27,7 @@ const bannerVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "announcement",
+      variant: "default",
       size: "md",
     },
   },

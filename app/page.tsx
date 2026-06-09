@@ -4,7 +4,7 @@ import { Banner } from "@/registry/kromm-ui/ui/banner"
 export default function Page() {
   return (
     <div className="flex flex-col min-h-svh">
-      <Banner showClose>
+      <Banner variant="success" showClose>
 
       </Banner>
       <div className="flex max-w-md min-w-0 flex-col p-6 gap-4 text-sm leading-loose">
